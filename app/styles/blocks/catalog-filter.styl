@@ -1,0 +1,731 @@
+.catalog-filter
+	float left
+	width 263px
+	&-block
+		background #fff
+		-webkit-border-radius 3px
+		border-radius 3px
+		box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+		&-1
+			border-radius 3px 3px 0 0 
+			border-width 1px 1px 0 
+			.catalog-filter-title
+				-webkit-border-radius 3px 3px 0 0
+				border-radius 3px 3px 0 0 
+		&-2
+			-webkit-border-radius 0 0 3px 3px 
+			border-radius 0 0 3px 3px 
+			.catalog-filter-ul
+				-webkit-border-radius 0 0 3px 3px 
+				border-radius 0 0 3px 3px 
+		&-3
+			.catalog-filter-ul
+				-webkit-border-radius 3px 3px 0 0  
+				border-radius 3px 3px 0 0
+	&-nav-block
+		margin-top 0
+		// border-radius 3px
+			
+	&-title
+		border 1px solid #666
+		padding 14px 16px 12px 16px 
+		// background #565656
+		background rgba(86,86,86,.70) 
+		font-size 18px
+		font-weight 600 
+		line-height 1
+		color #363636 
+	&-i
+		border-top 1px solid #e3e3e3
+		// padding 14px 20px 12px
+		// line-height 42px
+		&:first-child
+			border-top 1px solid transparent 
+	&-a
+		position relative
+		padding 14px 17px 12px
+		display block
+		font-size 18px
+		line-height 18px
+		color #343435 
+		text-decoration none
+		&:after
+			position absolute
+			top 50%
+			left 100%
+			margin-top -3px
+			width 8px
+			height 5px
+			content ""
+			sprite($triangle-down)
+		&-text 
+			display inline-block
+			margin-left 20px 
+	&-ul
+		&-sub
+			margin-bottom 1px
+			padding 0 36px
+			&-i
+				margin-bottom 6px
+				line-height 20px
+			&-a
+				color #7E7E7E 
+				&:hover
+					text-decoration none
+.catalog-filter-block-3
+	position relative
+	padding-bottom 10px
+	.catalog-filter
+		&-a
+			padding 14px 0 12px 16px
+			display inline-block
+			cursor pointer
+			&-text
+				margin-left 0
+				margin-right 10px 	
+				font-size 16px			
+			.ui-icon
+				margin-top -2px  
+				left 90%
+		&-ul
+			&-sub
+				padding 0 16px
+				overflow hidden
+		&-price
+			&-range
+				// margin-bottom 20px
+				padding 9px 0 21px
+				clearfix()
+				&-item
+					margin-left 12px
+					float left
+					&:first-child
+						margin-left 0
+					&-title
+						padding-right 4px 
+					&-input
+						border 1px solid #c8c8c8
+						display inline-block
+						width 72px
+						height 22px
+						background #fff
+						text-align center
+						font-size 14px
+						font-weight 400
+						line-height 22px 
+						-webkit-border-radius 3px
+						 border-radius 3px 
+			&-slider
+				position relative
+				margin 0 10px 17px
+				height 7px
+				background #f5f5f5
+				-webkit-border-radius 3px
+				border-radius 3px
+				.ui-slider-range
+					position absolute
+					top 0
+					right 10px
+					left 10px
+					z-index 1
+					border 1px solid $orange 
+					border-width 1px 0 1px 
+					height 7px
+					background $orange
+					overflow hidden 
+				.ui-slider-handle
+					position absolute
+					top -6px
+					z-index 2
+					margin-left -8px 
+					width 17px
+					height 17px
+					background #fff
+					-webkit-border-radius 999px
+					 border-radius 999px
+					-webkit-box-shadow 0 1px 4px 0px rgba(0,0,0,.15)
+					box-shadow 0 1px 4px 0px rgba(0,0,0,.15)
+					&:after
+						position absolute
+						top 50%
+						left 50%
+						margin-top -3px
+						margin-left -3px
+						width 6px
+						height 6px
+						background #EEEFF0  
+						content '' 
+						-webkit-border-radius 999px
+						border-radius 999px
+		&-ul
+			&-sub
+				fieldset
+					border none
+		&-i
+			&-price
+				.catalog-filter-ul-sub
+					margin 0 16px
+					padding 0 
+			&-brands
+				.catalog-filter-a
+					padding 8px 0 12px 16px
+					.ui-icon
+						margin-top -4px 
+				.catalog-filter-ul-sub 
+					margin-bottom 10px
+					padding-top 10px
+			&-material 
+				.catalog-filter-ul-sub
+					margin-bottom 10px
+					padding-top 10px
+			&-country
+				.catalog-filter-ul-sub
+					margin-bottom 10px
+					padding-top 10px
+			&-form
+				.catalog-filter-ul-sub
+					margin-bottom 30px
+					padding-top 10px
+.catalog-filter-checkboxlist
+	&-i
+		line-height 20px
+		margin-bottom 4px
+	&-checkbox 
+		position relative
+		margin-right 8px
+		float left
+		width 19px
+		height 19px
+		background #fff 
+		-webkit-border-radius 3px
+		border-radius 3px
+		.icheckbox
+			position absolute
+			width 19px
+			height 19px
+			background #fff 
+			// background url(../images/checkbox.png) 0 0 no-repeat
+			sprite($checkbox)
+			-webkit-border-radius 3px
+			border-radius 3px
+			cursor pointer
+			&.checked
+				width 19px
+				height 19px
+				// background url(../images/checkbox-check.png) 0 0 no-repeat 
+				sprite($checkbox-check)
+			&.hover
+				// background url(../images/checkbox-check.png) 0 0 no-repeat
+				sprite($checkbox-check)
+				 
+	&-i
+		label
+			display block
+			cursor pointer
+			&.hover
+				.catalog-filter-checkboxlist-text
+					color #989898 
+				.icheckbox
+					// background url(../images/checkbox-check.png) 0 0 no-repeat
+					sprite($checkbox-check)
+.catalog-filter-i-color
+	.catalog-filter-ul-sub
+		margin-bottom 14px 
+.catalog-filter-checkboxlist-color
+	margin-left -5px
+	clearfix()
+	.catalog-filter-checkboxlist-i
+		float left
+		margin-left 5px
+		margin-bottom 6px
+	.catalog-filter-checkboxlist-i,
+	.catalog-filter-checkboxlist-checkbox
+		width 27px
+		height 27px
+		-webkit-border-radius 4px
+		border-radius 4px
+	.icheckbox
+			position absolute
+			width 27px
+			height 27px
+			-webkit-border-radius 4px
+			border-radius 4px
+			&.checked
+				border 2px solid $orange
+				width 27px
+				height 27px
+			&.hover
+				border 2px solid $orange
+				-webkit-border-radius 4px
+				border-radius 4px
+				 
+	&-1
+		label
+			.icheckbox
+				// background url(../images/color-1.png) 0 0 no-repeat
+				sprite($color-1)
+				&.checked
+					// background url(../images/color-1.png) 0 0 no-repeat
+					sprite($color-1)
+				&.hover
+					// background url(../images/color-1.png) 0 0 no-repeat
+					sprite($color-1)
+			&.hover
+				// background url(../images/color-1.png) 0 0 no-repeat
+				sprite($color-1)
+	&-2
+		label
+			.icheckbox
+				// background url(../images/color-2.png) 0 0 no-repeat
+				sprite($color-2)
+				&.checked
+					// background url(../images/color-2.png) 0 0 no-repeat
+					sprite($color-2)
+				&.hover
+					// background url(../images/color-2.png) 0 0 no-repeat
+					sprite($color-2)
+			&.hover
+				// background url(../images/color-2.png) 0 0 no-repeat
+				sprite($color-2)
+	&-3
+		label
+			.icheckbox
+				// background url(../images/color-3.png) 0 0 no-repeat
+				sprite($color-3)
+				&.checked
+					// background url(../images/color-3.png) 0 0 no-repeat
+					sprite($color-3)
+				&.hover
+					// background url(../images/color-3.png) 0 0 no-repeat
+					sprite($color-3)
+			&.hover
+				// background url(../images/color-3.png) 0 0 no-repeat
+				sprite($color-3)
+	&-4
+		label
+			.icheckbox
+				// background url(../images/color-4.png) 0 0 no-repeat
+				sprite($color-4)
+				&.checked
+					// background url(../images/color-4.png) 0 0 no-repeat
+					sprite($color-4)
+				&.hover
+					// background url(../images/color-4.png) 0 0 no-repeat
+					sprite($color-4)
+			&.hover
+				// background url(../images/color-4.png) 0 0 no-repeat
+				sprite($color-4)
+	&-5
+		label
+			.icheckbox
+				// background url(../images/color-5.png) 0 0 no-repeat
+				sprite($color-5)
+				&.checked
+					// background url(../images/color-5.png) 0 0 no-repeat
+					sprite($color-5)
+				&.hover
+					// background url(../images/color-5.png) 0 0 no-repeat
+					sprite($color-5)
+			&.hover
+				// background url(../images/color-5.png) 0 0 no-repeat
+				sprite($color-5)
+	&-6
+		label
+			.icheckbox
+				// background url(../images/color-6.png) 0 0 no-repeat
+				sprite($color-6)
+				&.checked
+					// background url(../images/color-6.png) 0 0 no-repeat
+					sprite($color-6)
+				&.hover
+					// background url(../images/color-6.png) 0 0 no-repeat
+					sprite($color-6)
+			&.hover
+				// background url(../images/color-6.png) 0 0 no-repeat
+				sprite($color-6)
+	&-7
+		label
+			.icheckbox
+				// background url(../images/color-7.png) 0 0 no-repeat
+				sprite($color-7)
+				&.checked
+					// background url(../images/color-7.png) 0 0 no-repeat
+					sprite($color-7)
+				&.hover
+					// background url(../images/color-7.png) 0 0 no-repeat
+					sprite($color-7)
+			&.hover
+				// background url(../images/color-7.png) 0 0 no-repeat
+				sprite($color-7)
+	&-8
+		label
+			.icheckbox
+				// background url(../images/color-8.png) 0 0 no-repeat
+				sprite($color-8)
+				&.checked
+					// background url(../images/color-8.png) 0 0 no-repeat
+					sprite($color-8)
+				&.hover
+					// background url(../images/color-8.png) 0 0 no-repeat
+					sprite($color-8)
+			&.hover
+				// background url(../images/color-8.png) 0 0 no-repeat
+				sprite($color-8)
+	&-9
+		label
+			.icheckbox
+				// background url(../images/color-9.png) 0 0 no-repeat
+				sprite($color-9)
+				&.checked
+					// background url(../images/color-9.png) 0 0 no-repeat
+					sprite($color-9)
+				&.hover
+					 // background url(../images/color-9.png) 0 0 no-repeat
+					 sprite($color-9)
+			&.hover
+				// background url(../images/color-9.png) 0 0 no-repeat
+				sprite($color-9)
+	&-10
+		label
+			.icheckbox
+				// background url(../images/color-10.png) 0 0 no-repeat
+				sprite($color-10)
+				&.checked
+					// background url(../images/color-10.png) 0 0 no-repeat
+					sprite($color-10)
+				&.hover
+					// background url(../images/color-10.png) 0 0 no-repeat
+					sprite($color-10)
+			&.hover
+				// background url(../images/color-10.png) 0 0 no-repeat
+				sprite($color-10)
+	&-11
+		label
+			.icheckbox
+				// background url(../images/color-11.png) 0 0 no-repeat
+				sprite($color-11)
+				&.checked
+					// background url(../images/color-11.png) 0 0 no-repeat
+					sprite($color-11)
+				&.hover
+					// background url(../images/color-11.png) 0 0 no-repeat
+					sprite($color-11)
+			&.hover
+				// background url(../images/color-11.png) 0 0 no-repeat
+				sprite($color-11)
+	&-12
+		label
+			.icheckbox
+				// background url(../images/color-12.png) 0 0 no-repeat
+				sprite($color-12)
+				&.checked
+					// background url(../images/color-12.png) 0 0 no-repeat
+					sprite($color-12)
+				&.hover
+					// background url(../images/color-12.png) 0 0 no-repeat
+					sprite($color-12)
+			&.hover
+				// background url(../images/color-12.png) 0 0 no-repeat
+				sprite($color-12)
+	&-13
+		label
+			.icheckbox
+				// background url(../images/color-13.png) 0 0 no-repeat
+				sprite($color-13)
+				&.checked
+					// background url(../images/color-13.png) 0 0 no-repeat
+					sprite($color-13)
+				&.hover
+					// background url(../images/color-13.png) 0 0 no-repeat
+					sprite($color-13)
+			&.hover
+				// background url(../images/color-13.png) 0 0 no-repeat
+				sprite($color-13)
+	&-14
+		label
+			.icheckbox
+				// background url(../images/color-14.png) 0 0 no-repeat
+				sprite($color-14)
+				&.checked
+					// background url(../images/color-14.png) 0 0 no-repeat
+					sprite($color-14)
+				&.hover
+					// background url(../images/color-14.png) 0 0 no-repeat
+					sprite($color-14)
+			&.hover
+				// background url(../images/color-14.png) 0 0 no-repeat
+				sprite($color-14)
+	&-15
+		label
+			.icheckbox
+				// background url(../images/color-15.png) 0 0 no-repeat
+				sprite($color-15)
+				&.checked
+					// background url(../images/color-15.png) 0 0 no-repeat
+					sprite($color-15)
+				&.hover
+					// background url(../images/color-15.png) 0 0 no-repeat
+					sprite($color-15)
+			&.hover
+				// background url(../images/color-15.png) 0 0 no-repeat
+				sprite($color-15)
+	&-16
+		label
+			.icheckbox
+				// background url(../images/color-16.png) 0 0 no-repeat
+				sprite($color-16)
+				&.checked
+					// background url(../images/color-16.png) 0 0 no-repeat
+					sprite($color-16)
+				&.hover
+					// background url(../images/color-16.png) 0 0 no-repeat
+					sprite($color-16)
+			&.hover
+				// background url(../images/color-16.png) 0 0 no-repeat
+				sprite($color-16)
+	&-17
+		label
+			.icheckbox
+				// background url(../images/color-17.png) 0 0 no-repeat
+				sprite($color-17)
+				&.checked
+					// background url(../images/color-17.png) 0 0 no-repeat
+					sprite($color-17)
+				&.hover
+					// background url(../images/color-17.png) 0 0 no-repeat
+					sprite($color-17)
+			&.hover
+				// background url(../images/color-17.png) 0 0 no-repeat
+				sprite($color-17)
+	&-18
+		label
+			.icheckbox
+				// background url(../images/color-18.png) 0 0 no-repeat
+				sprite($color-18)
+				&.checked
+					// background url(../images/color-18.png) 0 0 no-repeat
+					sprite($color-18)
+				&.hover
+					// background url(../images/color-18.png) 0 0 no-repeat
+					sprite($color-18)
+			&.hover
+				// background url(../images/color-18.png) 0 0 no-repeat
+				sprite($color-18)
+	&-19
+		label
+			.icheckbox
+				// background url(../images/color-19.png) 0 0 no-repeat
+				sprite($color-19)
+				&.checked
+					// background url(../images/color-19.png) 0 0 no-repeat
+					sprite($color-19)
+				&.hover
+					// background url(../images/color-19.png) 0 0 no-repeat
+					sprite($color-19)
+			&.hover
+				// background url(../images/color-19.png) 0 0 no-repeat
+				sprite($color-19)
+	&-20
+		label
+			.icheckbox
+				// background url(../images/color-20.png) 0 0 no-repeat
+				sprite($color-20)
+				&.checked
+					// background url(../images/color-20.png) 0 0 no-repeat
+					sprite($color-20)
+				&.hover
+					// background url(../images/color-20.png) 0 0 no-repeat
+					sprite($color-20)
+			&.hover
+				// background url(../images/color-20.png) 0 0 no-repeat
+				sprite($color-20)
+	&-21
+		label
+			.icheckbox
+				// background url(../images/color-21.png) 0 0 no-repeat
+				sprite($color-21)
+				&.checked
+					// background url(../images/color-21.png) 0 0 no-repeat
+					sprite($color-21)
+				&.hover
+					// background url(../images/color-21.png) 0 0 no-repeat
+					sprite($color-21)
+			&.hover
+				// background url(../images/color-21.png) 0 0 no-repeat
+				sprite($color-21)
+
+// .catalog-filter-ul-sub-showmore
+// 	&.catalog-filter-ul-sub-material
+// 		.catalog-filter-checkboxlist
+// 			height 243px
+// .catalog-filter-ul-sub-showmore
+// 	&.catalog-filter-ul-sub-country
+// 		.catalog-filter-checkboxlist
+// 			height 203px
+
+.catalog-filter-showmore 
+	border-bottom 1px dotted #888 
+	display inline-block
+	color #888 
+	line-height 13px
+	text-decoration none
+			
+.catalog-filter-button
+	margin-bottom 4px
+	padding 0 17px 
+	&-input
+		border 1px solid $orange 
+		width 100%
+		height 40px
+		display inline-block
+		background $orange
+		line-height 40px
+		font-size 16px
+		font-weight 600 
+		text-align center 
+		color #fff
+		-webkit-border-radius 3px
+		border-radius 3px
+.catalog-filter-clear 
+	text-align center
+	&-a
+		display inline-block
+		border-bottom 1px dotted #888 
+		color #888 
+		text-decoration none
+		line-height 13px
+		&:hover
+			border-bottom 1px dotted transparent
+.catalog-filter-result
+	position absolute
+	top 160px
+	right -157px
+	padding 9px 15px 
+	width 167px
+	height 46px
+	background $orange
+	font-size 12px
+	color #fff 
+	z-index 1
+	line-height 14px
+	&-title
+		white-space nowrap 
+	&-link
+		a
+			border-bottom 1px dotted #fff 
+			display inline-block
+			margin-left 6px
+			font-weight 700 
+			color #fff 
+			text-decoration none
+			line-height 13px 
+			&:hover
+				border-bottom 1px dotted transparent
+	&:before
+		position absolute
+		top 50%
+		left -6px
+		margin-top -5px 
+		content ""
+		display block 
+		width 0
+		height 0
+		border-style solid
+		border-width 5px 6px 5px 0
+		border-color transparent $orange transparent transparent
+		
+
+.products-catalog		
+	&-top-filter
+			padding-bottom 32px
+			line-height 1
+			clearfix()
+			&-item
+				float left
+				font-size 0
+				&-title
+					padding-right 14px
+					font-size 13px
+					display inline-block
+					vertical-align middle
+					line-height 25px
+				&-a
+					margin-right 3px
+					padding 0 6px 0 9px
+					border 1px solid transparent
+					display inline-block
+					vertical-align middle
+					color #7E7E7E 
+					-webkit-border-radius 3px
+					border-radius 3px
+					height 25px
+					text-decoration none
+					line-height 23px
+					font-size 13px
+					span
+						border-bottom 1px dotted #7E7E7E
+						display inline-block
+						line-height 13px
+					&-active,
+					&:hover
+						border 1px solid #C8C8C8
+						background #f0f0ef
+				&.products-catalog-top-filter-item-sortby 
+					margin-right 48px
+				&-selectlist
+					position relative
+					border 1px solid #c8c8c8
+					padding 0
+					width 60px
+					height 26px
+					display inline-block
+					vertical-align middle
+					background rgba(253,251,247,.25) 
+					-webkit-border-radius 3px
+					border-radius 3px
+					overflow hidden
+					&:after
+						position absolute
+						top 50%
+						right 10px  
+						margin-top -2px
+						content ""
+						sprite($triangle-down2) 
+					select
+						padding 0px 8px
+						width 150%
+						height 26px
+						border none
+						background transparent
+						background-image none
+						font-size 13px
+						// text-align center
+						color #878787
+						-webkit-appearance none
+					   	-moz-appearance none
+					   	appearance none 
+						-webkit-box-shadow none 
+						box-shadow none
+						&:focus
+							outline none 
+				&-view
+					float right
+					font-size 0
+					line-height 21px
+					.products-catalog-top-filter-item-title
+						padding-right 16px
+						font-size 13px
+						display inline-block
+						vertical-align middle
+					&-a
+						margin-left 9px
+						display inline-block
+						vertical-align middle
+					&-list
+						sprite($view-list)
+					&-grid
+						sprite($view-grid)
+						
+
+
+		

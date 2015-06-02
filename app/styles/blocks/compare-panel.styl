@@ -1,0 +1,64 @@
+.compare-panel
+	position fixed
+	top 336px
+	right 0
+	padding 15px
+	width 251px
+	background #FFF 
+	border-radius 3px 0 0 3px
+	box-shadow 0 1px 3px 0 rgba(49,39,28,.1)  
+	z-index 1
+	&-list
+		margin-bottom 10px
+	&-i
+		margin-bottom 10px
+	&-a
+		border 1px dashed #bdbdbd
+		-webkit-border-radius 3px
+		border-radius 3px
+		display block
+		min-height 48px
+		clearfix()
+		&:hover
+			border 1px dashed $orange
+	&-i
+		position relative
+		&-img
+			position absolute
+			top 3px
+			left 3px
+			width 42px
+			height 42px 
+			float left
+			img
+				width 42px
+				height 42px  
+		&-text
+			margin-left 52px
+			line-height 42px 
+			span
+				display inline-block
+				line-height 16px
+				font-size 12px
+				vertical-align middle
+		&-del
+			position absolute
+			top 0
+			right 0
+			display block
+			text-indent -9999px
+			sprite($delete-icon)
+	&-button
+		padding 0 46px 0 45px
+		display inline-block
+		background $orange 
+		color #FFF 
+		font-weight 700
+		font-size 14px 
+		line-height 40px
+		border-radius 3px
+		text-decoration none
+				
+
+
+

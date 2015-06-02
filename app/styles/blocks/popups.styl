@@ -1,0 +1,729 @@
+body											
+	.remodal
+		padding 0
+		width 370px
+		background #FFF 
+		border-radius 3px
+		&-close
+			top 21px
+			left auto
+			right 22px
+			sprite($cross-icon)
+			&:hover
+				sprite($cross-icon)
+				background-color transparent 
+			&:after
+				display none	
+		input
+			font-size 15px
+			&:focus
+				font-size 15px
+		.callback,
+		.login-popup
+			&-submit
+				font-size 20px
+				border-radius 0 0 3px 3px
+		.login-popup
+			&-submit
+				border-radius 3px
+		select
+			font-size 14px
+.callback-popup,
+.login-popup
+	position relative
+	margin 20px auto
+	padding 20px 20px 20px
+	width auto
+	max-width 370px 
+	background #FFF 
+	&-title
+		border-bottom 1px solid #ececec 
+		font-weight 700 
+		font-size 18px
+		line-height 52px
+	&-text
+		margin-top 175px
+		margin-bottom 20px
+		padding 0 20px 
+		font-size 13px
+		line-height 24px
+		color #828282 
+		&:after
+			position absolute
+			top 94px
+			left 50%
+			margin-left -50px
+			content ''
+			display block
+			sprite($callback-icon2)
+	&-input
+		border 1px solid #bdbdbd
+		margin-bottom 20px
+		padding 0 18px 
+		width 328px 
+		height 38px
+		line-height 38px
+		font-weight 400 
+		font-size 15px
+		color #a1a1a1 
+		border-radius 3px
+.callback,
+.login-popup
+	&-submit
+		border 1px solid $orange 
+		width 370px
+		display block
+		line-height 56px		
+		background $orange
+		color #FFF 
+		font-weight 700
+		font-size 20px 
+	 	border-radius 0 0 3px 3px   	
+
+.login-popup
+	&-title
+		margin-bottom 47px
+	&-submit
+		margin 0 21px 30px  
+		width 327px
+		border-radius 3px
+	&-note
+		margin-bottom 20px
+		font-size 13px
+	&-ul
+		margin-bottom 33px
+		display inline-block
+		clearfix()
+	&-i
+		margin-right 16px
+		float left
+		&-1
+			.login-popup-a
+				sprite($login-fb)
+		&-2
+			.login-popup-a
+				sprite($login-vk)
+		&-3
+			.login-popup-a
+				sprite($login-inst)
+		&-4
+			.login-popup-a
+				sprite($login-ok)
+	&-a
+		display block
+		text-indent -9999px
+	&-bottom
+		border-top 1px smmolid #E8E8E8
+		padding 20px  
+		border-radius 0 0 3px 3px
+		height 54px
+		line-height 54px
+		background #F7F7F7
+		clearfix()
+		&-reg,
+		&-forg
+			border-bottom 1px dotted #A1A1A1 
+			display inline-block
+			font-size 12px
+			color #a1a1a1 
+			line-height 13px
+			text-decoration none
+			&:hover
+				border-bottom 1px dotted transparent
+		&-reg
+			float left
+		&-forg
+			float right   
+
+.cart-popup.remodal
+	width 360px
+	.remodal-close
+		top 9px
+		right 9px
+	.cart-popup
+		&-row
+			border-top 1px solid #e8e8e8
+			padding-left 32px
+			&:first-child
+				border-top none
+		&-price
+			padding 30px 0 30px 30px
+			&-title,
+			&-val
+				display inline-block
+				vertical-align middle
+			&-title
+				font-size 14px
+				width 157px 
+				sup
+					font-size 9px
+			&-val	
+				padding 0 0 0 10px 
+				width 165px
+				font-size 14px
+				text-align left
+				span
+					font-weight 700 
+					font-size 30px
+		&-area
+			padding 25px 0 25px 30px
+			&-title,
+			&-val
+				display inline-block
+				vertical-align middle
+			&-title
+				font-size 14px
+				width 157px 
+			&-val	
+				padding-left 10px
+				width 165px
+				font-size 14px
+				text-align left
+				input
+					margin-right 5px
+					border 1px solid #bdbdbd
+					width 109px
+					height 36px
+					font-size 14px
+					line-height 36px
+					color #BDBDBD 
+					text-align center
+					border-radius 3px
+				sup
+					font-size 10px
+		&-amount
+			padding 30px 0 30px 30px
+			&-title,
+			&-val
+				display inline-block
+				vertical-align middle
+			&-title
+				font-size 14px
+				width 157px
+				line-height 18px 
+				span
+					font-size 12px
+					color #A1A1A1 
+			&-val	
+				padding-left 10px
+				width 165px
+				font-size 14px
+				text-align left
+				.cart-table-body-col-quantity
+					width 110px
+				.cart-table-body-col-quantity-input
+					width 54px
+		&-total
+			padding 20px 0 25px
+			background #F7F7F7 
+			border-radius 0 0 3px 3px  
+			&-val
+				margin-bottom 15px
+				display inline-block
+				vertical-align middle
+				font-size 14px
+				span
+					font-size 30px
+					font-weight 700
+			&-submit
+				margin-bottom 13px
+				border 1px solid $orange 
+				padding 0 24px 
+				background $orange
+				width 225px
+				font-weight 800
+				font-size 16px 
+				line-height 45px
+				color #FFF  
+				border-radius 3px
+			&-note
+				font-size 12px
+				color #a1a1a1  
+				
+
+body
+	.remodal.assistant-popup
+		width 750px
+		text-align left
+		.assistant-popup-title
+			margin-bottom 35px
+			padding-top 32px
+			padding-left 40px 
+			font-weight 700
+			font-size 30px
+	.remodal.assistant-popup
+		input
+			font-size 14px
+		
+		
+.assistant-popup-price-row
+	border-bottom 1px solid #ECECEC
+	padding 0 105px 0 40px 
+	clearfix()				
+.assistant-popup
+	&-price
+		width 260px
+		&-range
+			padding 9px 0 21px
+			font-size 14px
+			clearfix()
+			&-item
+				margin-left 12px
+				float left
+				&:first-child
+					margin-left 0
+				&-title
+					padding-right 4px 
+					font-size 14px
+					color #2E2E2E 
+				&-input
+					border 1px solid #bdbdbd
+					display inline-block
+					width 78px
+					height 33px
+					background #fff
+					text-align center
+					font-size 14px
+					font-weight 400
+					color #A1A1A1 
+					line-height 22px 
+					-webkit-border-radius 3px
+					 border-radius 3px 
+		&-slider
+			position relative
+			margin 0 2px 28px
+			border 1px solid #BDBDBD 
+			height 7px
+			background #fff
+			-webkit-border-radius 3px
+			border-radius 3px
+			.ui-slider-range
+				position absolute
+				top 0
+				right 10px
+				left 10px
+				z-index 1
+				border 1px solid #f69400
+				border-width 1px 0 1px 
+				height 7px
+				background $orange
+				overflow hidden 
+			.ui-slider-handle
+				position absolute
+				top -4px
+				border 1px solid #E2E2E2 
+				z-index 2
+				margin-left -3px 
+				width 6px
+				height 14px
+				background #fff
+				border-radius 2px
+				box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+		
+
+.assistant-popup-type
+	border-bottom 1px solid #ECECEC
+	padding 40px 0 35px 40px
+	&-text
+		padding-right 28px
+		font-size 14px
+	select
+		border 1px solid #BDBDBD 
+		width 198px 
+		height 35px
+		padding 0 0 0 14px
+		background #fff
+		font-size 14px
+		font-weight 400  
+		color #BDBDBD 
+		border-radius 3px
+		
+
+
+
+
+
+
+				
+.assistant-popup-color
+	padding 45px 0 40px 40px 
+	&-text
+		margin-right 25px
+		margin-top 10px 
+		display inline-block
+		font-size 14px
+		vertical-align top
+	.assistant-popup-color-ul-sub
+		margin-bottom 14px 
+		width 540px
+		display inline-block
+		fieldset
+			border none
+.assistant-popup-color-checkboxlist-color
+	margin-left -5px
+	clearfix()
+	.assistant-popup-color-checkboxlist-i
+		float left
+		margin-left 5px
+		margin-bottom 6px
+	.assistant-popup-color-checkboxlist-i,
+	.assistant-popup-color-checkboxlist-checkbox
+		width 27px
+		height 27px
+		-webkit-border-radius 4px
+		border-radius 4px
+	.icheckbox
+			position absolute
+			width 27px
+			height 27px
+			-webkit-border-radius 4px
+			border-radius 4px
+			&.checked
+				border 2px solid $orange
+				width 27px
+				height 27px
+			&.hover
+				border 2px solid $orange
+				-webkit-border-radius 4px
+				border-radius 4px
+				 
+	&-1
+		label
+			.icheckbox
+				// background url(../images/color-1.png) 0 0 no-repeat
+				sprite($color-1)
+				&.checked
+					// background url(../images/color-1.png) 0 0 no-repeat
+					sprite($color-1)
+				&.hover
+					// background url(../images/color-1.png) 0 0 no-repeat
+					sprite($color-1)
+			&.hover
+				// background url(../images/color-1.png) 0 0 no-repeat
+				sprite($color-1)
+	&-2
+		label
+			.icheckbox
+				// background url(../images/color-2.png) 0 0 no-repeat
+				sprite($color-2)
+				&.checked
+					// background url(../images/color-2.png) 0 0 no-repeat
+					sprite($color-2)
+				&.hover
+					// background url(../images/color-2.png) 0 0 no-repeat
+					sprite($color-2)
+			&.hover
+				// background url(../images/color-2.png) 0 0 no-repeat
+				sprite($color-2)
+	&-3
+		label
+			.icheckbox
+				// background url(../images/color-3.png) 0 0 no-repeat
+				sprite($color-3)
+				&.checked
+					// background url(../images/color-3.png) 0 0 no-repeat
+					sprite($color-3)
+				&.hover
+					// background url(../images/color-3.png) 0 0 no-repeat
+					sprite($color-3)
+			&.hover
+				// background url(../images/color-3.png) 0 0 no-repeat
+				sprite($color-3)
+	&-4
+		label
+			.icheckbox
+				// background url(../images/color-4.png) 0 0 no-repeat
+				sprite($color-4)
+				&.checked
+					// background url(../images/color-4.png) 0 0 no-repeat
+					sprite($color-4)
+				&.hover
+					// background url(../images/color-4.png) 0 0 no-repeat
+					sprite($color-4)
+			&.hover
+				// background url(../images/color-4.png) 0 0 no-repeat
+				sprite($color-4)
+	&-5
+		label
+			.icheckbox
+				// background url(../images/color-5.png) 0 0 no-repeat
+				sprite($color-5)
+				&.checked
+					// background url(../images/color-5.png) 0 0 no-repeat
+					sprite($color-5)
+				&.hover
+					// background url(../images/color-5.png) 0 0 no-repeat
+					sprite($color-5)
+			&.hover
+				// background url(../images/color-5.png) 0 0 no-repeat
+				sprite($color-5)
+	&-6
+		label
+			.icheckbox
+				// background url(../images/color-6.png) 0 0 no-repeat
+				sprite($color-6)
+				&.checked
+					// background url(../images/color-6.png) 0 0 no-repeat
+					sprite($color-6)
+				&.hover
+					// background url(../images/color-6.png) 0 0 no-repeat
+					sprite($color-6)
+			&.hover
+				// background url(../images/color-6.png) 0 0 no-repeat
+				sprite($color-6)
+	&-7
+		label
+			.icheckbox
+				// background url(../images/color-7.png) 0 0 no-repeat
+				sprite($color-7)
+				&.checked
+					// background url(../images/color-7.png) 0 0 no-repeat
+					sprite($color-7)
+				&.hover
+					// background url(../images/color-7.png) 0 0 no-repeat
+					sprite($color-7)
+			&.hover
+				// background url(../images/color-7.png) 0 0 no-repeat
+				sprite($color-7)
+	&-8
+		label
+			.icheckbox
+				// background url(../images/color-8.png) 0 0 no-repeat
+				sprite($color-8)
+				&.checked
+					// background url(../images/color-8.png) 0 0 no-repeat
+					sprite($color-8)
+				&.hover
+					// background url(../images/color-8.png) 0 0 no-repeat
+					sprite($color-8)
+			&.hover
+				// background url(../images/color-8.png) 0 0 no-repeat
+				sprite($color-8)
+	&-9
+		label
+			.icheckbox
+				// background url(../images/color-9.png) 0 0 no-repeat
+				sprite($color-9)
+				&.checked
+					// background url(../images/color-9.png) 0 0 no-repeat
+					sprite($color-9)
+				&.hover
+					 // background url(../images/color-9.png) 0 0 no-repeat
+					 sprite($color-9)
+			&.hover
+				// background url(../images/color-9.png) 0 0 no-repeat
+				sprite($color-9)
+	&-10
+		label
+			.icheckbox
+				// background url(../images/color-10.png) 0 0 no-repeat
+				sprite($color-10)
+				&.checked
+					// background url(../images/color-10.png) 0 0 no-repeat
+					sprite($color-10)
+				&.hover
+					// background url(../images/color-10.png) 0 0 no-repeat
+					sprite($color-10)
+			&.hover
+				// background url(../images/color-10.png) 0 0 no-repeat
+				sprite($color-10)
+	&-11
+		label
+			.icheckbox
+				// background url(../images/color-11.png) 0 0 no-repeat
+				sprite($color-11)
+				&.checked
+					// background url(../images/color-11.png) 0 0 no-repeat
+					sprite($color-11)
+				&.hover
+					// background url(../images/color-11.png) 0 0 no-repeat
+					sprite($color-11)
+			&.hover
+				// background url(../images/color-11.png) 0 0 no-repeat
+				sprite($color-11)
+	&-12
+		label
+			.icheckbox
+				// background url(../images/color-12.png) 0 0 no-repeat
+				sprite($color-12)
+				&.checked
+					// background url(../images/color-12.png) 0 0 no-repeat
+					sprite($color-12)
+				&.hover
+					// background url(../images/color-12.png) 0 0 no-repeat
+					sprite($color-12)
+			&.hover
+				// background url(../images/color-12.png) 0 0 no-repeat
+				sprite($color-12)
+	&-13
+		label
+			.icheckbox
+				// background url(../images/color-13.png) 0 0 no-repeat
+				sprite($color-13)
+				&.checked
+					// background url(../images/color-13.png) 0 0 no-repeat
+					sprite($color-13)
+				&.hover
+					// background url(../images/color-13.png) 0 0 no-repeat
+					sprite($color-13)
+			&.hover
+				// background url(../images/color-13.png) 0 0 no-repeat
+				sprite($color-13)
+	&-14
+		label
+			.icheckbox
+				// background url(../images/color-14.png) 0 0 no-repeat
+				sprite($color-14)
+				&.checked
+					// background url(../images/color-14.png) 0 0 no-repeat
+					sprite($color-14)
+				&.hover
+					// background url(../images/color-14.png) 0 0 no-repeat
+					sprite($color-14)
+			&.hover
+				// background url(../images/color-14.png) 0 0 no-repeat
+				sprite($color-14)
+	&-15
+		label
+			.icheckbox
+				// background url(../images/color-15.png) 0 0 no-repeat
+				sprite($color-15)
+				&.checked
+					// background url(../images/color-15.png) 0 0 no-repeat
+					sprite($color-15)
+				&.hover
+					// background url(../images/color-15.png) 0 0 no-repeat
+					sprite($color-15)
+			&.hover
+				// background url(../images/color-15.png) 0 0 no-repeat
+				sprite($color-15)
+	&-16
+		label
+			.icheckbox
+				// background url(../images/color-16.png) 0 0 no-repeat
+				sprite($color-16)
+				&.checked
+					// background url(../images/color-16.png) 0 0 no-repeat
+					sprite($color-16)
+				&.hover
+					// background url(../images/color-16.png) 0 0 no-repeat
+					sprite($color-16)
+			&.hover
+				// background url(../images/color-16.png) 0 0 no-repeat
+				sprite($color-16)
+	&-17
+		label
+			.icheckbox
+				// background url(../images/color-17.png) 0 0 no-repeat
+				sprite($color-17)
+				&.checked
+					// background url(../images/color-17.png) 0 0 no-repeat
+					sprite($color-17)
+				&.hover
+					// background url(../images/color-17.png) 0 0 no-repeat
+					sprite($color-17)
+			&.hover
+				// background url(../images/color-17.png) 0 0 no-repeat
+				sprite($color-17)
+	&-18
+		label
+			.icheckbox
+				// background url(../images/color-18.png) 0 0 no-repeat
+				sprite($color-18)
+				&.checked
+					// background url(../images/color-18.png) 0 0 no-repeat
+					sprite($color-18)
+				&.hover
+					// background url(../images/color-18.png) 0 0 no-repeat
+					sprite($color-18)
+			&.hover
+				// background url(../images/color-18.png) 0 0 no-repeat
+				sprite($color-18)
+	&-19
+		label
+			.icheckbox
+				// background url(../images/color-19.png) 0 0 no-repeat
+				sprite($color-19)
+				&.checked
+					// background url(../images/color-19.png) 0 0 no-repeat
+					sprite($color-19)
+				&.hover
+					// background url(../images/color-19.png) 0 0 no-repeat
+					sprite($color-19)
+			&.hover
+				// background url(../images/color-19.png) 0 0 no-repeat
+				sprite($color-19)
+	&-20
+		label
+			.icheckbox
+				// background url(../images/color-20.png) 0 0 no-repeat
+				sprite($color-20)
+				&.checked
+					// background url(../images/color-20.png) 0 0 no-repeat
+					sprite($color-20)
+				&.hover
+					// background url(../images/color-20.png) 0 0 no-repeat
+					sprite($color-20)
+			&.hover
+				// background url(../images/color-20.png) 0 0 no-repeat
+				sprite($color-20)
+	&-21
+		label
+			.icheckbox
+				// background url(../images/color-21.png) 0 0 no-repeat
+				sprite($color-21)
+				&.checked
+					// background url(../images/color-21.png) 0 0 no-repeat
+					sprite($color-21)
+				&.hover
+					// background url(../images/color-21.png) 0 0 no-repeat
+					sprite($color-21)
+			&.hover
+				// background url(../images/color-21.png) 0 0 no-repeat
+				sprite($color-21)
+
+.assistant-popup-bottom
+	padding 35px 0 40px 40px 
+	background #F7F7F7 
+	border-radius 0 0 3px 3px 
+	clearfix()
+	&-find
+		margin-bottom 8px
+		font-size 13px
+		color #A1A1A1 
+		span
+			font-weight 600
+	&-submit
+		margin-right 20px
+		border 1px solid $orange
+		padding 0 20px 
+		float left
+		background $orange
+		font-weight 800 
+		font-size 16px
+		color #FFF 
+		line-height 45px
+		border-radius 3px  
+	&-help
+		margin-top 3px
+		float left
+		font-size 13px
+		color #A1A1A1
+		line-height 18px 
+	&-a
+		border-bottom 1px dotted #A1A1A1 
+		display inline-block
+		color #828282 
+		text-decoration none
+		&:hover
+			border-bottom 1px dotted transparent 
+			
+		
+		
+		
+	 
+
+		
+
+
+

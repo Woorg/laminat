@@ -1,0 +1,782 @@
+.page-product
+	.header
+		margin-bottom 9px
+	.inner-title
+		padding-bottom 22px 
+.product-content
+	margin-bottom 30px
+.product-content-row
+	padding-bottom 26px
+	border-bottom 1px solid #d6d6d6
+	clearfix()
+.product-content-left
+	position relative
+	width 301px
+	float left
+	clearfix()
+	&-top
+		margin-bottom 26px
+		clearfix()
+.product-content
+	&-barcode,
+	&-rating
+		display inline-block
+	&-barcode
+		span
+			font-weight 700
+.product-content-rating
+	position relative
+	left 51px  
+.product-content-rating-title
+	padding-right 6px
+.product-content-rating-list
+	margin-right 2px
+	display inline-block
+	clearfix()
+	&-i
+		margin-right 3px
+		float left
+		sprite($star2)
+		&-active
+			sprite($star-active2)
+
+.product-content-social
+	clearfix()
+	&-title
+		margin-bottom 14px
+	&-ul
+		clearfix()
+	&-i
+		margin-right 13px
+		float left
+		&-1
+			.product-content-social-a
+				sprite($fb-icon)
+		&-2
+			.product-content-social-a
+				sprite($vk-icon)
+		&-3
+			.product-content-social-a
+				sprite($some-icon)
+		&-4
+			.product-content-social-a
+				sprite($ok-icon)
+		&-5
+			.product-content-social-a
+				sprite($twr-icon)
+		&-6
+			.product-content-social-a
+				sprite($youtube-icon)
+	&-a
+		display block
+		text-indent -9999px
+
+.product-content
+	&-center
+		margin-left 20px
+		padding-top 39px 
+		float left
+		width 458px
+	&-description
+		margin-bottom 19px
+		padding-bottom 16px
+		border-bottom 1px solid #d6d6d6
+		line-height 21px
+	&-param
+		margin-bottom 28px
+		padding-bottom 0px
+		&-title
+			margin-bottom 20px
+			font-weight 700
+			font-size 16px
+		&-ul
+			margin-bottom 30px
+		&-i
+			margin-bottom 13px
+			line-height 10px
+			border-bottom 1px dotted #2e2e2e 
+			font-weight 400  
+			clearfix()
+			&-title,
+			&-val
+				margin-bottom -4px 
+				display inline-block
+				font-size 12px
+				font-weight 600
+				background #ececec
+				line-height 16px
+			&-title
+				padding-right 5px
+				float left
+			&-val
+				padding-left 5px
+				float right
+		&-a
+			border-bottom 1px dotted $orange
+			font-weight 600
+			font-size 12px 
+			line-height 12px
+			color $orange 
+			text-decoration none
+	&-feedback
+		&-body
+			position relative
+			margin-bottom 9px
+			padding 15px 20px 16px
+			background #FFF
+			border-radius 3px
+			&:after
+				position absolute
+				bottom -6px
+				left 44px
+				content ""
+				width 0
+				height 0
+				border-style solid
+				border-width 6px 6px 0 0
+				border-color #ffffff transparent transparent transparent
+		&-text
+			font-size 12px
+			line-height 18px
+		&-bottom
+			line-height 24px
+			clearfix()
+		&-author
+			padding-right 14px
+			font-weight 700
+		&-link
+			border-bottom 1px dotted $orange
+			display inline-block
+			font-weight 600
+			font-size 12px
+			line-height 13px
+			color $orange   	
+			text-decoration none	
+
+.product-content-right
+	margin-top -16px 
+	float right
+	width 320px 
+.product-content-info-top
+	margin-bottom 14px
+	clearfix()
+
+.product-content-info-advantages
+	float left
+.product-content-info-advantages-i	
+	margin-right 10px
+	&-certif,
+	&-guarantee
+		border 1px solid #30261c
+		margin-right 9px
+		display inline-block
+		width 42px
+		height 42px  
+		background rgba(46,46,46,.7)
+		border-radius 3px
+		text-align center 
+		vertical-align middle
+		&-icon
+			display inline-block
+			text-indent -9999px
+	&-certif
+		&-icon
+			margin-top 9px
+			sprite($certif-icon)
+	&-guarantee
+		right 66px 
+		&-icon
+			margin-top 6px
+			sprite($guarantee-icon)
+			
+
+.product-content-info-controls
+	margin-top 17px
+	padding-bottom 5px
+	float right
+	clearfix()
+	&-i
+		position relative
+		margin-left 24px
+		padding-left 13px
+		float left
+		line-height 12px
+		&-1
+			.product-content-info-controls-icon
+				position absolute
+				top 0
+				left 1px
+				display inline-block
+				sprite($fav-icon2)
+		&-2
+			.product-content-info-controls-icon
+				position absolute
+				top 1px
+				left 0
+				display inline-block
+				sprite($compare-icon2)
+				
+.product-content-info-controls-a
+		border-bottom 1px dotted #888
+		font-size 12px
+		color #888
+		text-decoration none
+		cursor pointer
+		&:hover
+			border-bottom transparent
+
+.product-content-info-body
+	margin-bottom 27px
+	padding 15px 21px 21px
+	background #FFF 
+	border-radius 3px
+	box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+	&-row
+		border-bottom 1px solid #ebebeb
+.product-content-info
+	&-price 
+		position relative
+		clearfix()
+		&-old
+			margin-bottom 4px
+			color #999
+			span
+				font-weight 600
+				text-decoration line-through
+		&-new
+			margin-bottom 10px
+			font-weight 600 
+			font-size 19px 
+			span
+				font-weight 800 
+				font-size 36px	
+		&-button
+			position relative
+			margin-bottom 19px
+			padding 0 34px 0 60px 
+			display inline-block
+			background $orange
+			font-weight bold
+			font-size 14px
+			color #FFF  
+			line-height 34px
+			text-decoration none
+			border-radius 3px
+			&:after
+				position absolute
+				top 11px
+				left 32px
+				content ""
+				sprite($product-cart-icon) 
+	&-storage
+		position relative
+		margin-bottom 13px
+		padding-left 19px
+		font-weight 600 
+		font-size 12px
+		color #84CB15 
+		&:after
+			position absolute
+			top 0
+			left 0
+			content ""
+			sprite($check-icon) 
+	&-banner
+		position absolute
+		top 0
+		right 0
+			
+.product-content-info
+	&-delivery
+		margin-bottom 2px
+		border-bottom 1px solid #bababa 
+		padding-bottom 0
+		&-top
+			margin-bottom 13px
+			padding-top 12px
+		&-title
+			padding-right 2px
+			font-size 13px
+		&-changecity
+			display inline-block
+			&-a
+				padding-left 6px
+				position relative
+				color $orange
+				text-decoration none
+				span
+					border-bottom 1px dotted $orange
+				&:hover
+					span
+						border-bottom 1px dotted transparent
+		&-i
+			margin-bottom 11px
+			font-size 12px
+			color #999 
+			a
+				padding-right 0
+				color $orange
+				text-decoration underline
+				&:hover
+					text-decoration none
+					
+.product-content-info-special
+	&-title
+		margin-bottom 11px
+		font-weight 600 
+	&-body
+		border 1px solid #C3C3C3
+		padding 10px 16px 6px
+		border-radius 3px  
+	&-ul
+		margin-bottom 10px
+	&-i
+		margin-bottom 11px
+		line-height 10px
+		border-bottom 1px dotted #adadad 
+		font-weight 400  
+		clearfix()
+		&-title,
+		&-val
+			margin-bottom -4px 
+			display inline-block
+			font-size 12px
+			font-weight 600
+			background #fff
+			line-height 16px
+		&-title
+			padding-right 5px
+			float left
+		&-val
+			padding-left 5px
+			float right
+.product-content-info-bottom-banner	
+	position relative
+	padding 16px 16px 16px 72px 
+	border 1px solid #C3C3C3
+	border-radius 3px  
+	&-title
+		margin-bottom 7px
+		font-weight 700 
+	&-text
+		font-size 12px
+		color #999 
+	&:after
+		position absolute
+		content ""
+		display block
+		top 15px
+		left 21px
+		sprite($persent-icon)
+		
+.product-content
+	.advantages
+		margin-bottom 70px 
+		padding-top 26px
+
+.u-may-like
+	margin-bottom 36px
+	&-title
+		margin-bottom 26px
+		font-size 20px
+		font-weight 700 
+	&-list
+		margin-bottom 30px
+		clearfix()
+		&-i
+			margin-right 7px
+			float left
+		&-a
+			padding 0 6px 
+			line-height 27px
+			display block
+			color #767676  
+			border-radius 3px 
+			text-decoration none
+			span
+				display inline-block
+				line-height 13px
+				border-bottom 1px dotted #767676
+		&-i
+			&-active
+				.u-may-like-list-a
+					padding 0 11px
+					font-weight 700 
+					background $orange
+					color #fff
+					span
+						border-bottom 1px dotted transparent
+	&-slider
+		padding 0px 0px 0px 30px
+		border 2px solid $orange
+		background #FFF 
+		border-radius 3px
+		box-shadow 0 1px 3px 0 rgba(49,39,28,.1) 
+		clearfix()
+		#mCSB_1_container
+			margin-left 0
+		#mCSB_1_dragger_horizontal
+			width 84px
+			.mCSB_dragger_bar
+				background $orange 
+		#mCSB_1_scrollbar_horizontal
+			.mCSB_draggerRail
+				background #f7f7f7 
+		&-list
+			margin-top 35px
+			margin-bottom 41px
+			float left
+			width 850px
+			height 264px
+			clearfix()
+			&-i
+				position relative
+				margin-left 68px
+				width 162px
+				float left
+				&:first-child
+					margin-left 0
+			&-img
+				margin-bottom 12px
+				img
+					display block
+					width 160px
+					height 142px  
+			&-title
+				margin-bottom 11px
+				display inline-block
+				font-weight 600
+				font-size 12px
+				line-height 18px
+				text-decoration none
+				color #232323  
+			&-price
+				margin-bottom 10px
+				font-weight 600 
+				font-size 12px
+				color #232323 
+				span
+					font-weight 800
+					font-size 18px 
+			&-button
+				position relative
+				border 1px solid #EBEBEB 
+				padding 0 53px 0 47px
+				display inline-block
+				background #f9f9f9
+				font-weight 600
+				color #8d8d8d
+				line-height 35px 
+				border-radius 3px  
+				text-decoration none
+				&:after
+					position absolute
+					top 9px
+					left 17px
+					display block
+					content ''
+					sprite($product-checkbox-off)
+				&-active
+					border 1px solid $orange
+					background $orange
+					color #FFF
+					&:after
+						position absolute
+						top 9px
+						left 17px
+						display block
+						content ''
+						sprite($product-checkbox)
+			&-plus
+				position absolute
+				top 121px
+				right -43px
+				display block
+				sprite($big-plus-icon)
+.u-may-like-slider-right
+	float right
+	width 252px
+	height 340px
+	background url(../images/product-scroll-shadow.png) 0 0 repeat-y
+	&-content
+		padding 57px 14px 
+		height 100%
+		margin-left 41px
+		float right
+		background #F8F8F8
+	&-title
+		margin-bottom 29px
+		line-height 20px
+	&-price
+		margin-bottom 15px
+		font-weight 600
+		font-size 22px 
+		span
+			padding-right 8px
+			font-weight 700
+			font-size 33px 
+	&-button
+		position relative
+		margin-bottom 15px
+		display inline-block
+		padding 0 56px 0 69px 
+		background $orange 
+		font-weight 700
+		font-size 15px 
+		color #FFF
+		line-height 38px 
+		text-decoration none
+		-webkit-border-radius 3px
+		border-radius 3px
+		&:after
+			position absolute
+			top 11px
+			left 40px
+			content ''
+			display block
+			sprite($product-cart-icon)
+	&-note
+		margin-bottom 40px
+		font-size 11px
+		line-height 13px
+	&-a
+		display inline-block
+		font-size 12px
+		line-height 13px 
+		color $orange  
+.extra-service
+	margin-bottom 43px
+	&-title
+		margin-bottom 33px
+		font-weight 700
+		font-size 20px 	
+	&-body
+		border-radius 3px 
+		background #FFF
+		box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+		clearfix()
+	&-list
+		border-right 1px solid #EEE 
+		width 781px
+		float left
+		&-i
+			border-top 1px solid #eeeeee
+			line-height 41px
+			font-size 0
+			&:first-child 
+				border-top none
+			clearfix()
+			&-text,
+			&-price,
+			&-button
+				display inline-block
+				font-size 13px
+			&-text
+				padding 0 20px 
+				width 555px
+				line-height 18px
+				vertical-align middle
+			&-price
+				padding-right 8px
+				width 113px
+				text-align right
+				font-size 15px
+				span
+					font-size 18px
+					font-weight 700
+			&-button
+				margin 0 38px 0 8px 
+				padding 0 9px 
+				width 66px
+				background $orange
+				font-weight 700 
+				color #FFF 
+				line-height 25px
+				text-decoration none
+				border-radius 3px 
+	&-right
+		width 359px
+		float right
+		&-text
+			position relative
+			margin-top 150px
+			padding 0 67px 0 68px 
+			text-align center
+			line-height 24px
+			color #797979 
+			&:before
+				position absolute
+				top -65px
+				left 50%
+				margin-left -19px 
+				content ''
+				display block
+				sprite($product-check-icon)
+				
+
+.product-content-tabs
+	margin-bottom 40px
+	&-nav
+		position relative
+		z-index 1
+		margin-bottom -1px
+		font-size 0
+		clearfix()
+		&-i
+			display inline-block
+			line-height 34px
+		&-a
+			position relative
+			display inline-block
+			padding-left 58px
+			padding-right 34px
+			border 1px solid #dbdbdb
+			border-width 1px 1px 0  
+			background #fafafa
+			font-weight 600 
+			font-size 14px 
+			line-height 45px
+			color #8a8a8a 
+			-webkit-border-radius 3px 3px 0 0
+			border-radius 3px 3px 0 0
+			text-decoration none
+			span
+				font-weight 600 
+				color #999
+		&-i
+			&.ui-tabs-active
+				.product-content-tabs-nav-a
+					border 1px solid #fff
+					border-width 1px 1px 0  
+					// padding-left 35px
+					background #fff
+					line-height 46px
+					font-size 14px
+					font-weight 600 
+					color #2b2b2b 
+					-webkit-border-radius 3px 3px 0 0
+					border-radius 3px 3px 0 0
+					span
+						color #2B2B2B 
+			&-1
+				.product-content-tabs-nav-a
+					&:before
+						content ""
+						position absolute
+						top 50%
+						left 37px
+						margin-top -5px
+						display block
+						sprite($list-icon)
+			&-2
+				.product-content-tabs-nav-a
+					&:before
+						content ""
+						position absolute
+						top 50%
+						left 33px
+						margin-top -6px 
+						display block
+						sprite($comments-icon)
+			&-3
+				.product-content-tabs-nav-a
+					&:before
+						content ""
+						position absolute
+						top 50%
+						left 33px
+						margin-top -6px 
+						display block
+						sprite($ukladka-icon)
+
+	&-body
+		padding 30px 37px 48px
+		background #fff 
+		border-radius 0 3px 3px 3px 
+		-webkit-border-radius 0 3px 3px 3px
+	&-content
+		clearfix()
+		&-title
+			margin-bottom 28px
+			font-weight 700 
+			font-size 24px
+			color #2B2B2B 
+.product-content-tabs	
+	margin-bottom 62px	
+	&-param
+		margin-bottom 10px
+		border-bottom 1px solid #bababa 
+		padding-bottom 15px
+		&-wrap
+			padding-bottom 29px
+			clearfix()
+		&-ul
+			width 518px
+			margin-bottom 10px
+			&-left
+				float left
+			&-right
+				float right			
+		&-i
+			margin-bottom 16px
+			line-height 10px
+			border-bottom 1px dotted #878787 
+			font-weight 400  
+			clearfix()
+			&-title,
+			&-val
+				margin-bottom -4px 
+				display inline-block
+				font-size 13px
+				font-weight 600
+				background #fff
+				line-height 16px
+			&-title
+				padding-right 5px
+				float left
+			&-val
+				padding-left 5px
+				float right
+	&-content
+		&-note
+			padding-top 30px
+			font-size 11px
+			color #2B2B2B 
+			a
+				border-bottom 1px dotted $orange 
+				text-decoration none
+				font-weight 600 
+				color $orange 
+				&:hover
+					border-bottom 1px dotted transparent 
+
+
+.product-content
+	margin-bottom 58px
+	.catalog-list
+		margin-bottom 19px
+
+.product-note
+	font-size 11px
+	color #565656 
+	&-text
+		margin-bottom 10px
+		line-height 11px 
+.product-error-report
+	font-size 11px
+	color #565656 
+	&-text
+		margin-bottom 10px
+		line-height 11px 
+	&-icon
+		margin-left 10px
+		display inline-block
+		width 83px
+		height 20px
+		background url(../images/error-report.png) no-repeat
+		vertical-align middle
+		
+				
+	
+
+		

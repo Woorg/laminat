@@ -1,0 +1,260 @@
+.topline
+	min-height 28px 
+	background $topline-bg
+	&-in
+		position relative
+		clearfix()
+	&-store,
+	&-menu
+		display inline-block
+		font-size 0
+	&-store
+		&-i
+			padding-top 8px
+			display inline-block
+			min-height 28px
+		&-a
+			margin-left -1px
+			border-left 1px solid #E6E6E6
+			padding 0 12px
+			display block
+			font-size 12px
+			line-height 12px
+			color $topline-shops-link 
+			text-decoration none
+		&-i-active
+			position relative
+			background $white
+			z-index 1
+			.topline-store-a
+				border-left 1px solid transparent
+				color $topline-shops-link-active
+		&-i
+			&:hover
+				.topline-store-a
+					color $topline-shops-link-active 
+			
+	&-menu
+		margin-left 117px
+		&-i
+			margin-right 17px
+			display inline-block
+			font-size 0
+		&-a
+			font-size 13px
+			color $topline-menu-link
+			text-decoration none
+			&:hover
+				text-decoration underline  
+	&-controls
+		position absolute
+		top 0
+		right 0
+		padding-top 6px
+		font-size 0
+		&-a 
+			display inline-block
+			border-bottom 1px dotted $topline-controls-link 
+			color $topline-controls-link 
+			text-decoration none
+			line-height 1
+			font-size 13px
+			&:hover
+				border-bottom none
+		span
+			padding 0 5px
+			font-size 13px
+			color $topline-menu-link 
+.header
+	position relative
+	margin-bottom 37px 
+	padding-bottom 18px
+	background url(../images/shadow-header.png) 0 100% repeat-x
+	background-color transparent  
+	&-in
+		background #FFF 
+	&-body
+		position relative
+		padding-bottom 9px
+		border-bottom 1px solid #ECECEC 
+		background #FFF
+		clearfix()
+	&-logo
+		margin-top 16px
+		margin-right 2px
+		display inline-block
+		sprite($logo)
+		text-indent -9999px
+		vertical-align top
+	&-phones
+		margin-top 13px
+		display inline-block
+		font-size 0
+		&-i
+			margin-left 43px
+			display inline-block
+			font-size 13px
+			&-phone
+				margin-bottom 15px
+				font-size 32px
+				font-weight 700  
+				color $header-phones
+			&-link
+				color $header-body 
+				text-decoration none
+				&-text
+					display inline-block
+					line-height 13px
+					border-bottom 1px dotted $header-body
+				&:hover
+					.header-phones-i-link-text
+						border-bottom 1px dotted transparent
+			&-icon
+				margin-right 8px
+				display inline-block 
+				sprite($callback-icon)
+				vertical-align middle
+	&-cart
+		position absolute
+		top 26px
+		right 0
+		width 262px
+		padding-left 91px
+		&-icon
+			position absolute
+			top 11px
+			left 18px
+			sprite($cart-icon)
+		&-link
+			margin-bottom 10px
+			display inline-block
+			font-weight 700 
+			font-size 18px
+			border-bottom 1px dotted $header-body
+			text-decoration none
+			color $header-body
+			&:hover
+				border-bottom 1px dotted transparent
+		&-text
+			font-size 14px
+			color $header-cart-text 
+			white-space nowrap 
+		&-quantity
+			padding 0 5px 0 6px 
+			line-height 22px
+			display inline-block
+			background #FFE2AE
+			-webkit-border-radius 3px
+			border-radius 3px 
+	&-bottom
+		position relative
+		background #FFF 
+		clearfix()
+		&-filter-a
+			margin-right 43px
+			padding 0 10px 
+			display inline-block
+			border 2px solid $orange
+			-webkit-border-radius 3px 
+			border-radius 3px
+			font-size 11px
+			font-weight 900 
+			line-height 30px
+			color $orange
+			text-align center
+			text-decoration none 
+		&-menu
+			display inline-block
+			&-i
+				display inline-block
+				margin-left 21px
+				line-height 51px
+				min-height 51px 
+				&:first-child
+					margin-left 0
+			&-a
+				font-weight 600 
+				font-size 16px
+				color $header-body
+				text-decoration none
+		&-search
+			&-a
+				position absolute
+				top 9px
+				right 0
+				padding 0 65px 0 42px
+				display inline-block
+				border 2px solid $orange
+				-webkit-border-radius 3px 
+				border-radius 3px
+				font-size 12px
+				font-weight 900 
+				line-height 30px
+				color $orange
+				text-align center
+				text-decoration none
+			&-icon
+				position absolute
+				top 8px
+				right 25px
+				display inline-block
+				sprite($search-icon)
+.header-submenu
+	position absolute
+	top 52px
+	left 0
+	right 0
+	padding-top 20px
+	padding-bottom 32px
+	display none
+	border-top 5px solid $orange 
+	background #FFF url(../images/shadow-dropdown.png) 0 0 repeat-x
+	text-align center
+	z-index 100
+	&:before
+		content ""
+		position absolute
+		top -14px
+		left 50%
+		margin-left -8px
+		width 0
+		height 0
+		border-style solid
+		border-width 0 9.5px 9px 9.5px
+		border-color transparent transparent #f9a01b transparent
+	.developers-img
+		padding-bottom 40px
+	&-button
+		text-align center
+		&-a
+			padding 0 42px
+			display inline-block
+			min-height 35px
+			background $orange 
+			line-height 35px
+			font-size 14px
+			font-weight 700 
+			color #fff  
+			text-decoration none
+.header-bottom-menu-i
+	&:hover
+		.header-submenu
+			display block
+			
+.page-catalog
+	.header
+		margin-bottom 3px
+		
+
+
+					
+	
+	
+			
+			
+		
+		
+			
+		 
+	
+		

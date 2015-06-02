@@ -1,0 +1,224 @@
+.page-cart
+	.header
+		margin-bottom 15px
+	.inner
+		margin-bottom 52px
+		&-title
+			padding-bottom 33px
+	.breadcrumbs
+		padding-bottom 17px
+.cart-steps
+	position absolute
+	top 36px
+	right 0
+	&-i
+		margin-left 18px
+		padding 0 20px
+		display inline-block
+		background #fff
+		font-size 12px
+		font-weight 700
+		line-height 35px
+		color #797979
+		text-decoration none
+		border-radius 3px 
+		box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+		&-active
+			padding 0 25px
+			background $orange 
+			color #FFF  
+
+.cart-table
+	margin-bottom 41px
+	width 100%
+	background #fff
+	box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+	.table-row-head
+		text-align left
+		height 38px
+		background #FBFBFB
+		font-size 12px 
+		color #AEAEAE  
+	tr
+		border-top 1px solid #f1f1f1
+		&:first-child
+			border-top none
+	th
+		border-left 1px solid #f1f1f1
+		padding 0 27px
+		white-space nowrap
+		&:first-child
+			border-left none
+	td
+		border-left 1px solid #f1f1f1
+		padding 24px 24px 15px 27px 
+		&:first-child
+			border-left none
+.cart-i
+	&-desc
+		position relative
+		clearfix()
+	&-label
+		top -2px
+		left -2px
+		position absolute
+		display block
+		sprite($cart-label-1)
+	&-img
+		float left
+	&-content
+		margin-left 168px
+		&-title
+			margin-bottom 10px
+			font-weight 700
+			text-transform uppercase
+			// white-space nowrap 
+		&-text
+			margin-bottom 15px
+			font-weight 600
+			font-size 12px
+			color #999  
+		&-params
+			font-size 11px
+			color #999 
+			&-i
+				margin-bottom 9px
+	&-price
+		font-size 14px
+		white-space nowrap
+		text-align center
+		span
+			font-size 20px
+			font-weight 700 
+	&-area		
+		font-size 14px
+		white-space nowrap
+		text-align center
+		span
+			font-size 20px
+			font-weight 700 
+		sup
+			font-size 10px 
+	&-delete
+		margin auto
+		display block
+		text-indent -9999px
+		sprite($close-icon)
+
+.cart-table-body-col
+	&-quantity
+		width 98px 
+		.ui-spinner
+			// border 1px solid #d7d7d7
+			&-button
+				position relative
+				border 1px solid #bdbdbd 
+				display inline-block
+				width 28px
+				height 35px
+				background #e8e8e8 
+				line-height 1
+				cursor pointer
+				&.ui-state-hover
+					background #d9d9d9 
+			&-up
+				float right
+				-webkit-border-radius 0 3px 3px 0 
+				border-radius 0 3px 3px 0 
+				.ui-button-text
+					position absolute
+					top 50%
+					right 6px 
+					margin-top -6px
+					display block
+					sprite($plus-icon)
+				&.ui-state-hover
+					.ui-button-text
+						border-color transparent transparent transparent #a9a9a9
+				.ui-icon
+					display block
+					text-indent -9999px
+			&-down
+				float left
+				-webkit-border-radius 3px 0 0 3px 
+				border-radius 3px 0 0 3px 
+				.ui-button-text
+					position absolute
+					top 50%
+					left 6px 
+					margin-top -1px
+					display block
+					sprite($minus-icon)
+				&.ui-state-hover
+					.ui-button-text
+						border-color transparent #a9a9a9 transparent transparent
+				.ui-icon
+					display block
+					text-indent -9999px
+		&-input
+			border 1px solid #bdbdbd
+			border-width 1px 0  
+			background #fff 
+			width 42px
+			height 35px		
+			text-align center
+			font-size 16px
+			color #a1a1a1 	
+				
+.cart-row
+	margin-bottom 54px
+	clearfix()
+.cart-total
+	float left
+	line-height 24px
+	&-i
+		margin-right 14px
+		display inline-block
+		font-weight 600 
+		span
+			padding-left 5px
+			font-weight 700 
+			font-size 14px
+		sup
+			font-size 10px
+	&-price
+		float right
+		font-weight 600
+		font-size 18px
+		line-height 24px 
+		span
+			font-weight 700 
+			font-size 24px 
+		.cart-total-price-rub
+			font-weight 600 
+.cart
+	&-row-buttons
+		position relative
+	&-button
+		float left
+		display inline-block
+		padding 0 26px
+		background #c3c3c3
+		font-weight 700
+		font-size 14px
+		color #fff  
+		line-height 40px
+		text-decoration none 
+		border-radius 3px 
+		&-1
+			background $orange 
+		&-1
+			position absolute
+			top 0
+			right 0
+		&-note
+			margin-top 3px
+			margin-right 191px
+			width 183px
+			float right
+			font-size 12px
+			line-height 18px
+			text-align right 
+		
+
+

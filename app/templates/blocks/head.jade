@@ -1,0 +1,30 @@
++script([], ['common.min.js'])
+
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width')
+	meta(http-equiv='X-UA-Compatible' content='IE=edge')
+	meta(name='imagetoolbar' content='no')
+	meta(name='msthemecompatible' content='no')
+	meta(name='cleartype' content='on')
+	meta(name='HandheldFriendly' content='True')
+
+	meta(name='format-detection' content='telephone=no')
+	meta(name='format-detection' content='address=no')
+
+	meta(name='application-name' content=pageTitle || page.title)
+
+	block head
+	title= pageTitle
+	meta(name='description' content=pageDescription)
+	meta(name='keywords' content=pageKeywords)
+	meta(name='copyright' content=pageCopyright)
+
+
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+	link(href='assets/styles/common.css?' + timestamp rel='stylesheet')
+
+	script(src=topjs type='text/javascript')
+
+
+

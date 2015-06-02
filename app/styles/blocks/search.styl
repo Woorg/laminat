@@ -1,0 +1,61 @@
+.search
+	position absolute
+	bottom -114px
+	right 0
+	left 0
+	display none
+	background rgba(46,46,46,.9) 
+	z-index 55
+	&-in
+		padding-top 29px
+		padding-bottom 22px
+	&-form
+		margin-bottom 20px
+		font-size 0
+		clearfix()
+		&-input,
+		&-submit
+			display inline-block
+			line-height 46px 
+			vertical-align top
+		&-input
+			border none
+			padding 0 20px 
+			width 1088px
+			height 46px
+			background #fff
+			font-size 14px
+			line-height 46px
+			color #A5A5A5 
+			border-radius 3px 0 0 3px 
+		&-submit
+			border none
+			width 52px
+			height 46px
+			background $orange url(../images/search_icon2.png) 50% no-repeat
+			cursor pointer
+			border-radius 0 3px 3px 0
+	&-suggestions
+		color #999
+		&-title,
+		&-a,
+		&-icon
+			display inline-block
+			color #999 
+			line-height 14px
+			font-size 12px
+		&-title
+			margin-right 5px
+			font-weight 600 
+		&-icon
+			margin-right 5px
+			vertical-align top
+			sprite($suggestion-icon)
+		&-a
+			border-bottom 1px dotted #999
+			margin-left 5px 
+			line-height 13px 
+			text-decoration none
+			&:hover
+				border-bottom 1px dotted $orange
+				color $orange 

@@ -1,0 +1,6 @@
+[Mon May 18 2015 22:24:42 GMT+0300 (MSK)] Layer "Не всегда рационально демонтировать старое покрытие. Например, ": Expected end of input but "," found.
+[Mon May 18 2015 22:24:42 GMT+0300 (MSK)] Layer "Цены на напольные покрытия нашего интернет-магазина Parket.Vtap": Unsupported extension: vtap
+[Mon May 18 2015 22:25:41 GMT+0300 (MSK)] Layer "Laminat-expert@mail.ru": Unsupported extension: ru
+[Mon May 18 2015 22:24:42 GMT+0300 (MSK)] Layer "+7 ( ___ ) ___-__-__": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Mon May 18 2015 22:25:41 GMT+0300 (MSK)] Layer "guarantee-icon.png-8": Duplicate path: guarantee-icon.png
+[Mon May 18 2015 22:25:41 GMT+0300 (MSK)] Layer "user@example.ru": Unsupported extension: ru

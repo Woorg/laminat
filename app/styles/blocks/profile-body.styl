@@ -1,0 +1,207 @@
+.page-profile
+	.header
+		margin-bottom 15px
+	.breadcrumbs
+		padding 19px 130px 17px 0
+	.inner-title
+		padding-bottom 57px 
+.tabs
+	margin-bottom 40px
+	&-nav
+		position relative
+		z-index 1
+		margin-bottom -1px
+		font-size 0
+		clearfix()
+		&-i
+			display inline-block
+			line-height 34px
+		&-a
+			position relative
+			display inline-block
+			margin-right 0px
+			padding-left 52px
+			padding-right 30px
+			border 1px solid #dbdbdb
+			border-width 1px 1px 0  
+			background #fafafa
+			font-weight 600 
+			font-size 14px 
+			line-height 45px
+			color #8A8A8A 
+			-webkit-border-radius 3px 3px 0 0
+			border-radius 3px 3px 0 0
+			text-decoration none
+			span
+				font-weight 600 
+				color #999
+			&:before
+				content ""
+				position absolute
+				top 50%
+				left 29px
+				margin-top -4px 
+				display block
+				sprite($user-icon)
+		&-i
+			&.ui-tabs-active
+				.tabs-nav-a
+					border 1px solid #fff
+					border-width 0  
+					// padding-left 35px
+					background #fff
+					padding 0 21px 0 37px
+					line-height 46px
+					font-size 14px
+					font-weight 600 
+					color #2B2B2B 
+					-webkit-border-radius 3px 3px 0 0
+					border-radius 3px 3px 0 0
+					span
+						color #2B2B2B 
+					&:before
+						content ""
+						position absolute
+						top 50%
+						left 17px
+						margin-top -3px
+						display block
+						sprite($list-icon)
+	&-body
+		// border 1px solid #fff 
+		padding 17px 15px 17px
+		background #fff
+		-webkit-border-radius 0 3px 3px 3px
+		border-radius 0 3px 3px 3px
+	&-content 
+		clearfix()
+		&-title
+			margin-bottom 28px
+			font-weight 700 
+			font-size 24px
+			color #2B2B2B 
+.contragent
+	margin-bottom 12px
+	border 1px solid #F4F4F4 
+	padding 0 20px 
+	background #fbfbfb
+	line-height 51px
+	 border-radius 3px  
+	clearfix()
+	&-title,
+	&-status
+		font-weight 600
+		font-size 12px
+		color #6c6c6c 
+	&-title
+		float left
+		span
+			font-weight 600 
+	&-status
+		float right 
+		&-list
+			margin-bottom 24px
+			clearfix()
+			&-i
+				margin-right 12px
+				float left
+			&-a
+				padding 0 6px 
+				line-height 27px
+				display block
+				color #767676  
+				border-radius 3px 
+				text-decoration none
+				span
+					display inline-block
+					line-height 13px
+					border-bottom 1px dotted #767676
+			&-i
+				&-active
+					.contragent-status-list-a
+						padding 0 14px
+						font-weight 700 
+						background $orange
+						color #fff
+						span
+							border-bottom 1px dotted transparent 
+	&-table
+		margin-bottom 25px
+		border 1px solid #ECECEC
+		border-radius 3px 
+		width 100%
+		&-head
+			border-bottom 1px solid #ECECEC 
+			background #F6F6F6 
+			font-size 12px
+			color #B9B9B9 
+			text-align left
+			th
+				padding 8px 0
+				&.contragent-table-col-2
+					text-transform none
+		&-row  
+			border-top 1px solid #ECECEC 
+			&:first-child
+				border-top none
+			
+.contragent-table-col
+	&-1
+		padding 0 15px
+		text-align center
+	&-2
+		padding 0 0
+		height 42px
+		text-transform uppercase
+	&-3
+		text-align center
+	&-4
+		text-align center
+	&-5
+		text-align center
+	&-6
+		text-align center
+	&-7
+		text-align center
+		
+
+.contragent
+	&-note
+		font-size 12px
+		line-height 18px 
+		color #858585 
+
+	&-info
+		width 850px
+		&-row
+			border-top 1px dotted #CCC 
+			line-height 36px
+			clearfix()
+			&:first-child 
+				border-top none
+		&-title,
+		&-text,
+		&-control
+			float left
+		&-title
+			padding-right 22px
+			width 204px
+			text-align right
+			color $gray 
+		&-text
+			width 230px 
+		&-control
+			width 400px
+			text-decoration none
+			color $orange
+			span
+				border-bottom 1px dotted $orange
+			&:hover
+				span
+					border-bottom 1px dotted transparent
+			 
+
+
+
+
+ 

@@ -1,0 +1,408 @@
+.catalog
+	border-top 1px solid #D6D6D6
+	border-bottom 1px solid #D6D6D6 
+	margin-bottom 60px
+	background #e2e2e2
+	&-title
+		padding-top 42px
+		padding-bottom 49px
+		font-size 30px
+		font-weight 700
+		text-align center 
+	&-filter-wrap
+		text-align center      
+	&-top-filter
+		display inline-block
+		padding-bottom 49px
+		clearfix()
+		&-i
+			border 2px solid #a1a1a1
+			margin-right 20px
+			float left
+			background #e2e2e2
+			font-size 14px
+			font-weight 600 
+			line-height 28px
+			color #9D9D9D 
+			-webkit-border-radius 3px
+			border-radius 3px
+		&-a
+			padding 0 20px
+			display block
+			line-height 28px
+			// border-bottom 1px dotted #878787
+			color #878787
+			text-decoration none
+.catalog-top-filter-i
+	&:hover
+		background #ececec
+.catalog-filter-i-active
+	border 2px solid $orange
+	background $orange
+	font-size 14px
+	font-weight 700 
+	color #FFF
+	.catalog-top-filter-a
+		color #FFF 
+	&:hover
+		background $orange 
+		
+.catalog-list
+	margin-left -1px 
+	margin-right -1px
+	position relative
+	padding-bottom 45px
+	font-size 0
+	clearfix()
+	&-i
+		// margin-right 30px
+		display inline-block
+		margin-bottom 30px
+		padding-bottom 14px
+		// border 1px solid #fff
+		width 263px
+		background #fff
+		font-size 13px
+		box-shadow 0 1px 3px 0 rgba(49,39,28,.1)
+		border-radius 3px
+		&-img
+			margin-bottom 12px
+			img
+				display block
+		&-title
+			margin-bottom 7px
+			padding 0 12px
+			height 48px
+			font-weight 600
+			font-size 14px
+			line-height 22px
+			a
+				color #2e2e2e
+				text-decoration none
+		&-params
+			border-top 1px solid #ececec
+			border-bottom 1px solid #ececec
+			margin 0 12px 8px 
+			padding 6px 0 8px
+			font-size 12px
+			line-height 17px
+			color #999 
+		&-meta
+			margin-bottom 12px
+			padding 0 12px
+			clearfix()
+			&-rating,
+			&-reviews
+				line-height 24px
+				display inline-block
+				vertical-align middle
+			&-rating
+				margin-right 2px
+				clearfix()
+				&-i
+					margin-left 3px
+					float left
+					sprite($star)
+					&-active
+						sprite($star-active)
+					&:first-child
+						margin-left 0
+			&-reviews
+				&-a
+					border-bottom 1px dotted #b7b7b7
+					text-decoration none
+					font-size 12px
+					color #999999
+					line-height 24px
+					&:hover
+						border-bottom transparent
+		&-instock
+			position absolute
+			top 187px
+			left 14px
+			padding 0 9px 
+			background $orange
+			font-size 9px
+			font-weight 600 
+			text-transform uppercase
+			color #FFF  
+			line-height 20px
+			border-radius 3px
+		&-icons
+			position absolute
+			top 165px
+			right 15px  
+			font-size 0
+		&-certif,
+		&-guarantee
+			border 1px solid #30261c
+			margin-left 9px
+			display inline-block
+			width 42px
+			height 42px  
+			background rgba(46,46,46,.7)
+			border-radius 3px
+			text-align center 
+			vertical-align middle
+			&-icon
+				display inline-block
+				text-indent -9999px
+		&-certif
+			right 15px
+			&-icon
+				margin-top 9px
+				sprite($certif-icon)
+		&-guarantee
+			right 66px 
+			&-icon
+				margin-top 6px
+				sprite($guarantee-icon)
+
+
+.catalog-list-i-price
+	margin-left 10px
+	margin-right 6px
+	margin-bottom 17px
+	position relative
+	display block
+	height 54px
+	border 1px solid #dedede
+	background #f7f7f7
+	cursor pointer
+	-webkit-border-radius 3px
+	border-radius 3px
+	color $dark 
+	text-decoration none 
+	&-old
+		padding 6px 0 3px 8px
+		font-size 13px
+		line-height 1
+		color #727272
+		text-decoration line-through
+	&-title
+		margin 7px 0 0 8px
+		color #999 
+		vertical-align top
+		sup
+			font-size 10px
+	&-new
+		padding 0 0 0 8px
+		line-height 1
+		font-size 22px
+		font-weight 700
+		span
+			font-size 16px
+			font-weight 600
+	&-cart
+		position absolute
+		top 0
+		right 0
+		bottom 0      
+		border 1px solid #f69400
+		background $orange
+		padding 0 19px 0 22px
+		&:before
+			position absolute
+			top 50%
+			left -1px
+			margin-top -10px
+			display block
+			content ""
+			sprite($button-cart-arrow)
+		span
+			margin-top 14px 
+			display inline-block
+			sprite($button-cart-icon)
+.catalog-list-i-controls
+	margin 0 12px
+	padding-bottom 5px
+	clearfix()
+	&-i
+		position relative
+		margin-right 12px
+		padding-left 13px
+		float left
+		line-height 12px
+		&-1
+			.catalog-list-i-controls-icon
+				position absolute
+				top 0
+				left 1px
+				display inline-block
+				sprite($fav-icon)
+		&-2
+			.catalog-list-i-controls-icon
+				position absolute
+				top 1px
+				left 0
+				display inline-block
+				sprite($compare-icon)
+.catalog-list-i-controls-a
+		border-bottom 1px dotted #888
+		font-size 12px
+		color #888
+		text-decoration none
+		cursor pointer
+		&:hover
+			border-bottom transparent
+.catalog-list-i-label
+	position absolute
+	top -4px
+	left -4px
+	width 146px
+	height 147px
+	text-indent -9999px
+	&-1
+		// background url(../images/label_1.png) 0 0 no-repeat
+		sprite($label-1)
+	&-2
+		// background url(../images/label_2.png) 0 0 no-repeat
+		sprite($label-2)
+	&-3
+		// background url(../images/label_3.png) 0 0 no-repeat
+		sprite($label-3)
+	&-4
+		// background url(../images/label_4.png) 0 0 no-repeat
+		sprite($label-4)
+	&-5
+		// background url(../images/label_4.png) 0 0 no-repeat
+		sprite($label-5)
+		 
+.catalog-showmore
+	// margin-bottom 60px
+	padding-bottom 63px
+	text-align center
+	&-icon
+		margin auto
+		margin-bottom 17px
+		display block
+		sprite($more-icon) 
+	&-a
+		display block
+		font-weight 600
+		font-size 14px
+		color #797979
+		text-decoration none
+		&:hover
+			border-bottom transparent
+			.catalog-showmore-icon
+				sprite($more-icon-hover)
+
+.page-catalog
+	.catalog		
+		border-top none
+		border-bottom none
+		margin-bottom 90px
+		float right
+		width 847px
+		background transparent 
+	.catalog-list
+		padding-bottom 35px
+			
+.catalog-article
+	margin-bottom 20px
+	padding 12px 20px 0
+	background #FFF 
+	box-shadow 0 1px 3px 0 rgba(49,39,28,.1)   
+	clearfix()
+	&-img
+		margin 8px 20px 0 0 
+		float left
+		img
+			width 240px
+			height 130px
+	&-text
+		margin-top 0
+		margin-bottom 24px
+		line-height 24px 
+	&-more
+		padding-top 27px
+		border-top 1px solid #E3E3E3 
+	&-list
+		margin-left -30px
+		clearfix()
+	&-i
+		margin-left 30px
+		margin-bottom 20px
+		padding 3px
+		border 1px solid #f1f1f1 
+		width 246px
+		float left
+		background #F8F8F8 
+		border-radius 3px
+		&-a
+			color $orange    
+			text-decoration none
+		&-img
+			float left
+			img
+				display block
+				width 60px
+				height 60px
+		&-text
+			margin-left 76px
+			padding-top 9px 
+			font-weight 600
+			line-height 18px 
+					
+.products-pagination
+	padding 0 0 44px 
+	line-height 1 
+	clearfix()
+	&-content
+		float left
+		font-size 0
+		clearfix()
+		&-link,
+		&-ul
+			display inline-block
+		&-link
+			font-size 14px
+			color #8D8D8D 
+			line-height 34px 
+			vertical-align top
+			&-back
+				&-disabled
+					display none
+		&-ul
+			margin-right 14px
+		&-i
+			margin-right 7px
+			float left
+			-webkit-border-radius 3px
+			border-radius 3px
+			
+		&-a
+			border 1px solid #c8c8c8
+			display block
+			// padding 0 10px 0 10px
+			width 30px
+			background rgba(255,255,255,.25)  
+			font-size 14px
+			color #878787 
+			line-height 30px
+			text-align center
+			-webkit-border-radius 3px
+			border-radius 3px
+			text-decoration none
+		&-i
+			&-active
+				.products-pagination-content-a
+					border 1px solid #c8c8c8 
+					background rgba(255,255,255,.7)
+			&-dots
+				.products-pagination-content-a
+					border 1px solid transparent 
+					background transparent 
+					width 14px
+	&-info
+		float right
+		font-size 14px
+		line-height 34px
+		color #8D8D8D 					
+			
+.catalog-text
+	margin-bottom 38px
+	p
+		line-height 24px
+		  

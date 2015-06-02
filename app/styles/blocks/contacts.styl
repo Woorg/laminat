@@ -1,0 +1,67 @@
+.page-contacts
+	.header
+		margin-bottom 15px 
+	.breadcrumbs
+		padding-bottom 17px
+	.inner-title
+		padding-bottom 36px
+.contacts
+	margin-bottom 17px
+	width 750px
+	float left
+	&-row
+		margin-bottom 38px
+	&-text
+		margin-bottom 5px
+		font-size 14px
+		line-height 24px
+		color #464646   
+		span
+			color #797979
+		a
+			color $orange 
+			&:hover
+				text-decoration none 
+	&-titleh2
+		margin-bottom 25px
+		font-weight 700
+		font-size 24px
+		line-height 28px 
+	&-gallery
+		margin-bottom 42px
+		clearfix()
+		&-i
+			position relative
+			margin-right 10px
+			margin-bottom 10px
+			float left
+			&-img
+				width 120px
+				height 120px
+				border-radius 3px
+				img
+					width 120px
+					height 120px
+		&-zoom
+			position absolute
+			top 0
+			left 0
+			right 0
+			bottom 0
+			display none
+			background rgba(249,161,27,.8)
+			&-icon
+				position absolute
+				top 50%
+				left 50%
+				margin-top -10px
+				margin-left -10px  
+				sprite($zoom-icon) 
+		&-a
+			&:hover
+				.contacts-gallery-zoom
+					display block
+			
+				
+			
+
