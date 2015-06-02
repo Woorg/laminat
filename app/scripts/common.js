@@ -61,21 +61,25 @@ $(function () {
 		values: [22700, 70000],
 		range: true,
 		slide: function (event, ui) {
-			$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost').val( ui.values[0].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
-			$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost').val( ui.values[1].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
+			$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost')
+                .val(ui.values[0].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
+			$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost')
+                .val(ui.values[1].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
 		}
 	});
-	$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost').val($('.catalog-filter-price-slider,.assistant-popup-price-slider').slider('values', 0).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
-	$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost').val($('.catalog-filter-price-slider,.assistant-popup-price-slider').slider('values', 1).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
+	$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost')
+        .val($('.catalog-filter-price-slider,.assistant-popup-price-slider').slider('values', 0)
+            .toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
+	$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost')
+        .val($('.catalog-filter-price-slider,.assistant-popup-price-slider').slider('values', 1)
+            .toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
 
 	// Checkboxes
 
-	$('.catalog-filter-checkboxlist-checkbox,.assistant-popup-color-checkboxlist-checkbox').iCheck({
-		labelHover: true
-	});
-
-	// $('.catalog-filter-i-color .catalog-filter-checkboxlist-checkbox,.assistant-popup-color-checkboxlist-checkbox').iCheck({
-	// });
+	$('.catalog-filter-checkboxlist-checkbox,.assistant-popup-color-checkboxlist-checkbox')
+		.iCheck({
+			labelHover: true
+		});
 
 	$('.catalog-filter-ul-sub-showmore ul').readmore({
 		collapsedHeight: 216,
@@ -117,7 +121,7 @@ $(function () {
 	});
 
 
-$('.to-top-a').click(function () {
+$('.to-top').click(function () {
 	// 1 second of animation time
 	// html works for FFX but not Chrome
 	// body works for Chrome but not FFX
