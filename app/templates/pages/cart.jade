@@ -4,13 +4,15 @@ block head
 	- pageTitle = 'Ламинат эксперт - корзина';
 block top
 	body.page-cart
-block content
-	.main
-		.inner
-			include ../blocks/breadcrumbs-cart
-			h1.inner-title Корзина
-			.cart-steps
-				a.cart-steps-i.cart-steps-i-active(href="#") Шаг 1: Выбор товаров
-				a.cart-steps-i(href="#") Шаг 2: Выбор метода доставки и оплаты
-			include ../blocks/cart-body
-include ../blocks/footer
+		include ../blocks/header
+		block content
+			.main
+				.inner
+					include ../blocks/breadcrumbs-cart
+					h1.inner-title Корзина
+					.cart-steps
+						a.cart-steps-i.cart-steps-i-active(href="#") Шаг 1: Выбор товаров
+						a.cart-steps-i(href="#") Шаг 2: Выбор метода доставки и оплаты
+					include ../blocks/cart-body
+			include ../blocks/footer
+			include ../blocks/scripts

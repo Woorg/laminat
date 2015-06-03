@@ -2,14 +2,14 @@ extends ../layouts/default
 
 block head
 	- pageTitle = 'Ламинат эксперт - Ламинат Meister LS 300 Дуб белый марципан 6268';
-	- topjs = 'http://api-maps.yandex.ru/2.1/?lang=ru_RU';
-
 block top
 	body.page-product
-block content
-	.main
-		.inner
-			include ../blocks/breadcrumbs-product
-			h1.inner-title Ламинат Meister LS 300 Дуб белый марципан 6268
-			include ../blocks/product-body
-include ../blocks/footer
+		include ../blocks/header
+		block content
+			.main
+				.inner
+					include ../blocks/breadcrumbs-product
+					h1.inner-title Ламинат Meister LS 300 Дуб белый марципан 6268
+					include ../blocks/product-body
+			include ../blocks/footer
+			include ../blocks/scripts

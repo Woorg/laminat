@@ -7,6 +7,7 @@ gulp.task 'browserSync', ->
 		files: ['dist/**/*']
 		open: !!gutil.env.open
 		port: gutil.env.port || 3001
+		tunnel: true
 		server:
 			baseDir: [
 				'app/resources'

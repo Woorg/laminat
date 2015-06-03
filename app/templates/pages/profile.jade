@@ -4,10 +4,12 @@ block head
 	- pageTitle = 'Ламинат эксперт - личный кабинет';
 block top
 	body.page-profile
-block content
-	.main
-		.inner
-			include ../blocks/breadcrumbs-profile
-			h1.inner-title Личный кабинет
-			include ../blocks/profile-body
-include ../blocks/footer
+		include ../blocks/header
+		block content
+			.main
+				.inner
+					include ../blocks/breadcrumbs-profile
+					h1.inner-title Личный кабинет
+					include ../blocks/profile-body
+			include ../blocks/footer
+			include ../blocks/scripts

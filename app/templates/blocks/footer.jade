@@ -2,7 +2,7 @@
 	.subscribe-in
 		h1.subscribe-title Регистрируйся и получай свежую информацию об акциях, спецпредложениях и скидках!
 		.subscribe-form
-			form(id="#", method="post", action="#")
+			form(method="post", action="#")
 				input.subscribe-input(type="text" value="" placeholder="user@example.ru")
 				input.subscribe-submit(type="submit" value="Отправить")
 .footer
@@ -76,8 +76,8 @@
 .banner-fixed
 	p.banner-fixed-text Закажите профессиональную укладку ламината сейчас!
 	a.banner-fixed-button(href="#") Заказать сейчас
-a.to-top
-	span.to-top-a(href="#toTop") Наверх
+a.to-top(href="#toTop")
+	span.to-top-icon Наверх
 .notification
 	p.notification-text Товар добавлен в корзину
 .compare-panel
@@ -129,7 +129,7 @@ a.to-top
 .callback-popup.remodal(data-remodal-id="callback-popup")
 	h3.callback-popup-title Обратный звонок
 	p.callback-popup-text Укажите свой контактный телефон, и мы перезвоним вам в ближайшие несколько минут:
-	form( method="post", action="#")
+	form(method="post", action="#")
 		.callback-popup-form
 			input.callback-popup-input#phone-input(type="text" value="" placeholder="+7 ( ___ ) ___-__-__")
 			input.callback-submit(type="submit" value="Я жду звонка") 
@@ -187,10 +187,10 @@ a.to-top
 					.assistant-popup-price-range
 						.assistant-popup-price-range-item
 							span.assistant-popup-price-range-item-title Цена от:
-							input.assistant-popup-price-range-item-input#mincost(type="text" value="0")
+							input.assistant-popup-price-range-item-input#mincost2(type="text" value="0")
 						.assistant-popup-price-range-item
 							span.assistant-popup-price-range-item-title до
-							input.assistant-popup-price-range-item-input#maxcost(type="text" value="1000")
+							input.assistant-popup-price-range-item-input#maxcost2(type="text" value="1000")
 					.assistant-popup-price-slider
 
 		.assistant-popup-type
@@ -210,89 +210,68 @@ a.to-top
 				fieldset
 					ul.assistant-popup-color-checkboxlist.assistant-popup-color-checkboxlist-color
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-1
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-2
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-3
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-4
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-5
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-6
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-7
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-8
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-9
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-10
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-11
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-12
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-13
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-14
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-15
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-16
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-17
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-18
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-19
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-20
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 						li.assistant-popup-color-checkboxlist-i.assistant-popup-color-checkboxlist-color-21
-							label
-								.assistant-popup-color-checkboxlist-checkbox
-									input(type="checkbox" name="#" value="#")
+							.assistant-popup-color-checkboxlist-checkbox
+								input(type="checkbox" name="#" value="#")
 
 		.assistant-popup-bottom
 			.assistant-popup-bottom-find Найдено товаров: <span>27</span>

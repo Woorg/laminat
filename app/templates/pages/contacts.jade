@@ -3,15 +3,16 @@ extends ../layouts/default
 block head
 	- pageTitle = 'Ламинат эксперт - контакты';
 	- topjs = 'http://api-maps.yandex.ru/2.1/?lang=ru_RU';
-
 block top
 	body.page-contacts
-block content
-	.main
-		.inner
-			include ../blocks/breadcrumbs-contacts
-			h1.inner-title Контакты
-			include ../blocks/contacts-body
-			include ../blocks/contacts-side
-	include ../blocks/map
-include ../blocks/footer
+		include ../blocks/header
+		block content
+			.main
+				.inner
+					include ../blocks/breadcrumbs-contacts
+					h1.inner-title Контакты
+					include ../blocks/contacts-body
+					include ../blocks/contacts-side
+			include ../blocks/map
+			include ../blocks/footer
+			include ../blocks/scripts

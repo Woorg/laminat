@@ -61,16 +61,16 @@ $(function () {
 		values: [22700, 70000],
 		range: true,
 		slide: function (event, ui) {
-			$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost')
+			$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost2')
                 .val(ui.values[0].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
-			$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost')
+			$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost2')
                 .val(ui.values[1].toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
 		}
 	});
-	$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost')
+	$('.catalog-filter-price-range-item-input#mincost,.assistant-popup-price-range-item-input#mincost2')
         .val($('.catalog-filter-price-slider,.assistant-popup-price-slider').slider('values', 0)
             .toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
-	$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost')
+	$('.catalog-filter-price-range-item-input#maxcost,.assistant-popup-price-range-item-input#maxcost2')
         .val($('.catalog-filter-price-slider,.assistant-popup-price-slider').slider('values', 1)
             .toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1 ') + '.00');
 

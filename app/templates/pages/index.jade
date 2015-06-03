@@ -2,12 +2,15 @@ extends ../layouts/default
 
 block head
 	- pageTitle = 'Ламинат эксперт - главная';
-
-block content
-	.main
-		include ../blocks/main-top
-		include ../blocks/catalog-main
-		include ../blocks/services
-		include ../blocks/articles
-		include ../blocks/description-bottom
-include ../blocks/footer
+block top
+	body
+		include ../blocks/header
+		block content
+			.main
+				include ../blocks/main-top
+				include ../blocks/catalog-main
+				include ../blocks/services
+				include ../blocks/articles
+				include ../blocks/description-bottom
+			include ../blocks/footer
+			include ../blocks/scripts

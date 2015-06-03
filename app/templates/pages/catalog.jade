@@ -4,11 +4,14 @@ block head
 	- pageTitle = 'Ламинат эксперт - каталог';
 block top
 	body.page-catalog
-block content
-	.main
-		.inner
-			include ../blocks/breadcrumbs
-			h1.inner-title Ламинат для кухни (179)
-			include ../blocks/catalog-filter
-			include ../blocks/catalog-page
-include ../blocks/footer
+		include ../blocks/header
+		block content
+			.main
+				.inner
+					include ../blocks/breadcrumbs
+					h1.inner-title Ламинат для кухни (179)
+					include ../blocks/catalog-filter
+					include ../blocks/catalog-page
+
+			include ../blocks/footer
+			include ../blocks/scripts
