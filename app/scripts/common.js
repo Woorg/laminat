@@ -128,30 +128,8 @@ $('.to-top').click(function () {
 	// This strange selector seems to work universally
 	$('html, body').animate({scrollTop: 0}, 1000);
 });
-ymaps.ready(function () {
-	var myMap = new ymaps.Map('map', {
-		center: [55.791586, 37.592362],
-		zoom: 17,
-		controls: ['smallMapDefaultSet']
-	}),
-	myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-		hintContent: 'Ламинат эксперт',
-		balloonContent: 'Мы находимся по адресу: ул. Новослободская д. 62, корп. 19.'
-	}, {
-		// Опции.
-		// Необходимо указать данный тип макета.
-		iconLayout: 'default#image',
-		// Своё изображение иконки метки.
-		iconImageHref: 'assets/images/pin-icon.png',
-		// Размеры метки.
-		iconImageSize: [130, 99],
-		// Смещение левого верхнего угла иконки относительно
-		// её "ножки" (точки привязки).
-		iconImageOffset: [-43, -93]
-	});
 
-	myMap.geoObjects.add(myPlacemark);
-	});
 });
+
 
 
